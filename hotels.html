@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Подбор жилья в Седоне</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-md-2 col-md-offset-1">Информация</div>
+      <div class="col-md-2">Фото и видео</div>
+      <div class="col-md-2"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+      <div class="col-md-2">Карта штата</div>
+      <div class="col-md-2">Гостиницы</div>
+    </header>
+    <section class="row filter-block">
+      <form action="#">
+        <div class="col-md-3 infrastructure">
+          <span>Инфраструктура:</span>
+          <label><input type="checkbox" checked> Бассейн</label>
+          <label><input type="checkbox"> Парковка</label>
+          <label><input type="checkbox"> wi-fi</label>
+        </div>
+        <div class="col-md-3 house-type">
+          <span>Тип жилья:</span>
+          <label><input type="checkbox" checked> Гостиница</label>
+          <label><input type="checkbox" checked> Мотель</label>
+          <label><input type="checkbox" checked> Апартаменты</label>
+        </div>
+        <div class="col-md-6 price">
+          <span>стоимость в сутки (р):</span>
+          <div class="price-range"></div>
+          <div class="price-toggles"></div>
+          <button>показать</button>
+        </div>
+      </form>
+    </section>
+    <section class="row sort-block">
+      <div class="col-md-2">
+        <span>Найдено: 3</span>
+      </div>
+      <div class="col-md-8 sort-form">
+        <form action="#">
+          <span>сортировка:</span>
+            <ul>
+              <li><a href="#">по цене<a/></li>
+              <li><a href="#">по типу<a/></li>
+              <li><a href="#">по рейтингу<a/></li>
+            </ul>
+        </form>
+      </div>
+      <div class="col-md-2 sort-btn">
+        <a href="#" class="sort-up-btn"><img src="img/up-btn.png" alt="up"></a>
+        <a href="#" class="sort-down-btn"><img src="img/down-btn.png" alt="down"></a>
+      </div>
+    </section>
+    <section class="hotel-block">
+      <div class="row hotel-1">
+        <div class="col-md-2"><img src="img/hotel-1.jpg">
+        </div>
+        <div class="col-md-8">
+          <h3>amara resort & spa</h3>
+          <span>гостиница</span>
+          <span>от 3500 р.</span>
+          <a href="#" class="details-btn">подробнее</a>
+          <a href="#" class="reserv-btn">забронировать</a>
+        </div>
+        <div class="col-md-2">
+          <img src="img/star-4.png">
+          <span>рейтинг: 8,9</span>
+        </div>
+      </div>
+
+      <div class="row hotel-2">
+        <div class="col-md-2"><img src="img/hotel-2.jpg">
+        </div>
+        <div class="col-md-8">
+          <h3>desert quail inn</h3>
+          <span>мотель</span>
+          <span>от 2000 р.</span>
+          <a href="#" class="details-btn">подробнее</a>
+          <a href="#" class="reserv-btn">забронировать</a>
+        </div>
+        <div class="col-md-2">
+          <img src="img/star-2.png">
+          <span>рейтинг: 8,9</span>
+        </div>
+      </div>
+
+      <div class="row hotel-3">
+        <div class="col-md-2"><img src="img/hotel-3.jpg">
+        </div>
+        <div class="col-md-8">
+          <h3>villas at poco diablo</h3>
+          <span>апартаменты</span>
+          <span>от 4000 р.</span>
+          <a href="#" class="details-btn">подробнее</a>
+          <a href="#" class="reserv-btn">забронировать</a>
+        </div>
+        <div class="col-md-2">
+          <img src="img/star-3.png">
+          <span>рейтинг: 9,2</span>
+        </div>
+      </div>
+    </section>
+    <footer class="row">
+      <div class="col-md-4"><span>#visitsedona</span>
+      </div>
+      <div class="col-md-4 social">
+        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+      </div>
+      <div class="col-md-4">
+        <span>website by</span>
+        <a href="#"><img src="img/htmlac.png" alt="html-academy"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
