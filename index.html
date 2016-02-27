@@ -3,115 +3,148 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index-page">
     <div class="container">
-      <header class="row">
-        <div class="col-md-2 col-md-offset-1">Информация</div>
-        <div class="col-md-2">Фото и видео</div>
-        <div class="col-md-2"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
-        <div class="col-md-2">Карта штата</div>
-        <div class="col-md-2">Гостиницы</div>
+
+      <a class="header-link hidden-lg hidden-md hidden-sm" href="#"><i class="fa fa-bars"></i></a>
+
+      <header class="header row hidden-xs">
+        <div class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1"><a href="#">Информация</a></div>
+        <div class="col-xs-12 col-sm-6 col-md-2"><a href="#">Фото и видео</a></div>
+        <div class="col-xs-0 col-sm-0 col-md-2"><a href="index.html" class="logo hidden-xs"></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-2"><a href="#">Карта штата</a></div>
+        <div class="col-xs-12 col-sm-6 col-md-2"><a href="inner.html">Гостиницы</a></div>
       </header>
+
       <section class="row welcome-block">
         <div class="col-md-12">
-          <img src="img/welcome.png">
-          <img src="img/to-the-gorgeous.png">
-          <img src="img/sedona-title.png">
-          <img src="img/sucks.png">
+          <img src="img/index-title.png" alt="welcome" width="458" height="352">
         </div>
       </section>
+
       <section class="row features-title">
         <div class="col-md-12">
-          <h1>седона-небольшой городок в аризоне, заслуживающий большего</h1>
-          <p>рассмотрим 5 причин, по которым седона круче, чес гранд каньон!</p>
+          <h1>седона-небольшой городок в аризоне,<br> заслуживающий большего</h1>
+          <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </div>
       </section>
+
       <section class="row feature-1">
-        <div class="col-md-4">
-          <h2>настоящий городок</h2>
-          <span>№1</span>
-          <p>седона-не аттракцион для туристов,<br>там течет своя жизнь</p>
+        <div class="col-xs-6 col-sm-6 col-md-4">
+          <h2>настоящий <br>городок</h2>
+          <span>- №1 -</span>
+          <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
       </section>
-      <section class="row noname">
-        <div class="col-md-4">
-          <img src="img/house-icon.svg">
+
+      <section class="row features-mini hidden-xs">
+        <div class="col-sm-4 col-md-4">
           <h2>жилье</h2>
           <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="col-md-4">
-          <img src="img/burger-icon.svg">
+        <div class="col-sm-4 col-md-4">
           <h2>еда</h2>
           <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="col-md-4">
-          <img src="img/gift-icon.svg">
+        <div class="col-sm-4 col-md-4">
           <h2>сувениры</h2>
           <p>не только китайского но и местного производства!</p>
         </div>
       </section>
+
       <section class="row feature-2">
-        <div class="col-md-4 col-md-offset-8">
+        <div class="col-xs-6 col-xs-offset-6 col-sm-6 col-md-4 col-md-offset-8">
           <h2>там есть мост дьявола</h2>
-          <span>№2</span>
+          <span>- №2 -</span>
           <p>да, по нему можно пройтись!<br>если конечно вы осмелитесь</p>
         </div>
       </section>
+
       <section class="row feature-345">
-        <div class="col-md-4">
-          <h2>небольшая площадь</h2>
-          <span>№3</span>
-          <p>все достопримечательности находятся довольно близко</p>
+        <div class="col-xs-6 col-sm-4 col-md-4">
+          <h2>небольшая<br>площадь</h2>
+          <span>- №3- </span>
+          <p>все достоприме&shy;чательности находятся довольно близко</p>
         </div>
-        <div class="col-md-4">
-          <h2>красивая дорога</h2>
-          <span>№4</span>
+        <div class="col-xs-6 col-sm-4 col-md-4">
+          <h2>красивая<br>дорога</h2>
+          <span>- №4 -</span>
           <p>ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
-        <div class="col-md-4">
-          <h2>мало туристов</h2>
-          <span>№5</span>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-4">
+          <h2>мало<br>туристов</h2>
+          <span>- №5 -</span>
           <p>большинство едет в гранд каньон и толпится там</p>
         </div>
       </section>
-      <section class="row search-hotel">
+
+      <section class="row hotel-search-title">
         <div class="col-md-12">
           <span>заинтересовались?</span>
-          <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в седоне</p>
-          <div class="row search-hotel-form">
-            <form class="col-md-6 col-md-offset-3"action="#" method="post">
-              <h2>поиск гостиницы в седоне</h2>
-              <label>дата заезда:<input type="date" name="date-in" value="date" placeholder="24 апреля 2016"></label>
-              <label>дата выезда:<input type="date" name="date-out" value="date" placeholder="4 июля 2016"></label>
-              <label>взрослые:<input type="number" name="number-adult" placeholder="2"></label>
-              <label>дети:<input type="number" name="number-children" placeholder="0"></label>
-              <button>найти</button>
-            </form>
-          </div>
+          <p>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+              предложения гостиниц в седоне</p>
         </div>
       </section>
+
+      <div class="row hotel-search-block">
+        <div class="col-xs-12 col-sm-12 col-md-12">          
+          <a href="search-form.html" class="hotel-search-button">поиск гостиницы в седоне</a>
+          <form action="#" class="hotel-search-form hide">
+            <div class="row date-in">
+              <label class="col-xs-4 col-sm-4 col-md-4" for="date-in">дата заезда:</label>
+              <input  class="col-xs-8 col-sm-8 col-md-8" id="date-in" type="date" name="date-in" value="2016-07-04" required>
+            </div>
+            <div class="row date-out">
+              <label class="col-xs-4 col-sm-4 col-md-4" for="date-out">дата выезда:</label>
+              <input class="col-xs-8 col-sm-8 col-md-8" id="date-out" type="date" name="date-out" value="2016-07-04" required>
+            </div>
+            <div class="row">
+              <div class="col-xs-7 col-sm-7 col-md-7">
+                <label class="adult">
+                  <span>взрослые:</span>
+                  <i class="fa fa-minus"></i>
+                  <input type="number" name="number-adult" placeholder="2" required>
+                  <i class="fa fa-plus"></i>
+                </label>
+              </div>
+              <div class="col-xs-5 col-sm-5 col-md-5">
+                <label class="children">
+                  <span>дети:</span>
+                  <i class="fa fa-minus"></i>
+                  <input type="number" name="number-children" placeholder="0" required>
+                  <i class="fa fa-plus"></i>
+                </label>
+              </div>
+            </div>
+            <button>найти</button>
+          </form>
+        </div>
+      </div>
+
       <section class="row map">
-        <div class="col-md-12">
-          <iframe></iframe>
-        </div>
+        <iframe  class="col-sm-12 col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050595157!2d-111.8301578607186!3d34.85437338107142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1455822239660" allowfullscreen></iframe>
       </section>
+
       <footer class="row">
-        <div class="col-md-4"><span>#visitsedona</span>
+        <div class="col-xs12 col-sm-4 col-md-4"><span>#visitsedona</span>
         </div>
-        <div class="col-md-4 social">
-          <a href="#"><img src="img/twitter.png" alt="twitter"></a>
-          <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-          <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+        <div class="col-xs-12 col-sm-4 col-md-4 social">
+          <a href="#"><i class="fa fa-twitter"></i></a><!--
+          --><a href="#"><i class="fa fa-facebook"></i></a><!--
+          --><a href="#"><i class="fa fa-youtube-play"></i></a>
         </div>
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-4 col-md-4">
           <span>website by</span>
-          <a href="#"><img src="img/htmlac.png" alt="html-academy"></a>
+          <a href="#"></a>
         </div>
       </footer>
     </div>
+    <script src="js/script-index.js"></script>
   </body>
 </html>

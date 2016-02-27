@@ -1,0 +1,47 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-burger {
+    width: 74px;
+    height: 70px;
+    background-position: -5px -5px;
+}
+
+.sprite-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -89px -5px;
+}
+
+.sprite-house {
+    width: 75px;
+    height: 72px;
+    background-position: -5px -91px;
+}
+
+.sprite-html-ac-logo {
+    width: 113px;
+    height: 39px;
+    background-position: -90px -91px;
+}
+
+.sprite-html-ac-logo-blue {
+    width: 113px;
+    height: 39px;
+    background-position: -90px -140px;
+}
+
+.sprite-html-ac-logo-grey {
+    width: 113px;
+    height: 39px;
+    background-position: -163px -5px;
+}
+
+.sprite-logo {
+    width: 138px;
+    height: 70px;
+    background-position: -5px -189px;
+}

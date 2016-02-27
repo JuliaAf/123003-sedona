@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Подбор жилья в Седоне</title>
+
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link href="css/jquery-ui.css" rel="stylesheet">
+  <link href="css/range.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+  <div class="container">
+
+  
+    <a href="index.html" class="hidden-lg hidden-md hidden-sm"><i class="fa fa-home"></i></a>
+    <a href="#" class="header-link hidden-lg hidden-md hidden-sm"><i class="fa fa-bars"></i></a>
+
+    <header class="header row hidden-xs">
+      <div class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1"><a href="#">Информация</a></div>
+      <div class="col-xs-12 col-sm-6 col-md-2"><a href="#">Фото и видео</a></div>
+      <div class="col-xs-0 col-sm-0 col-md-2"><a href="index.html" class="logo hidden-xs"></a></div>
+      <div class="col-xs-12 col-sm-6 col-md-2"><a href="#">Карта штата</a></div>
+      <div class="col-xs-12 col-sm-6 col-md-2"><a href="inner.html">Гостиницы</a></div>
+    </header>
+
+    <section class="row filter-block">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="row">
+          <form action="#">
+            <div class="col-xs-4 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-md-2 col-md-offset-1 infrastructure">
+              <span>Инфраструктура:</span>
+              <input id="infr-1" type="checkbox" name="waterpool" checked><!--
+              --><label for="infr-1">Бассейн</label><!--
+              --><input id="infr-2" type="checkbox" name="parking"><!--
+              --><label for="infr-2">Парковка</label><!--
+              --><input id="infr-3" type="checkbox" name="wifi"><!--
+              --><label for="infr-3">wi-fi</label>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-sm-offset-0 col-md-2 house-type">
+              <span>Тип жилья:</span>
+              <input id="house-1" type="checkbox" name="hotel" checked> <!--
+              --><label for="house-1">Гостиница</label><!--
+              --><input id="house-2" type="checkbox" name="motel" checked><!-- 
+              --><label for="house-2">Мотель</label><!--
+              --><input id="house-3" type="checkbox" name="apartment" checked><!--
+              --><label for="house-3">Апартаменты</label>          
+            </div>
+            <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2 price">                  
+              <div class="price-title">стоимость в сутки (р):
+              </div>
+              <div class="price-range">
+                <div class="min-price">
+                  от 0
+                </div>
+                <div class="max-price">
+                  до 3000
+                </div>
+              </div>
+              <div class="flat-slider" id="flat-slider">
+              </div>
+              <button>показать</button>
+            </div>         
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="row sort-block">
+      <div class="col-xs-3 col-sm-3 col-md-2 col-md-offset-1 result">
+        <span>Найдено: 3</span>
+      </div>
+      <div class="col-xs-8 col-sm-7 col-md-6 sort-form">
+        <form action="#">
+          <span>сортировка:</span><!--
+            --><ul><!--
+              --><li class="active"><a href="#">по цене</a></li><!--
+              --><li><a href="#">по типу</a></li><!--
+              --><li><a href="#">по рейтингу</a></li>
+            </ul>
+        </form>
+      </div>
+      <div class="col-xs-1 col-sm-2 col-md-2 sort-btn">
+        <a href="#" class="sort-up-btn"><i class="fa fa-caret-up"></i></a>
+        <a href="#" class="sort-down-btn"><i class="fa fa-caret-down active"></i></a>
+      </div>
+    </section>
+
+    <section class="row hotel-block">
+      <div class="col-sm-12 col-md-12">
+
+        <article class="row hotel-1">
+          <div class="col-xs-3 col-sm-3 col-md-2 col-md-offset-1"><img src="img/hotel-1.jpg" width="135" height="90" alt="hotel-1">
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-6">
+            <h3>amara resort & spa</h3>
+            <div class="row">
+              <div class="col-xs-5 col-sm-4 col-md-3">
+                <span>гостиница</span>
+                <a href="#" class="details-btn">подробнее</a>
+              </div>
+              <div class="col-xs-7 col-sm-5 col-md-4">
+                <span>от 3500 р.</span>          
+                <a href="#" class="reserv-btn">забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 rate">
+            <div>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <span>рейтинг: 8,9</span>
+          </div>
+        </article>
+
+        <article class="row hotel-2">
+          <div class="col-xs-3 col-sm-3 col-md-2 col-md-offset-1"><img src="img/hotel-2.jpg" width="135" height="90" alt="hotel-2">
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-6">
+            <h3>desert quail inn</h3>
+            <div class="row">
+              <div class="col-xs-5 col-sm-4 col-md-3">
+                <span>мотель</span>
+                <a class="details-btn" href="#">подробнее</a>
+              </div>
+              <div class="col-xs-7 col-sm-5 col-md-4">
+                <span>от 2000 р.</span>
+                <a class="reserv-btn" href="#">забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 rate">
+            <div>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <span>рейтинг: 8,9</span>
+          </div>
+        </article>
+
+        <article class="row hotel-3">
+          <div class="col-xs-3 col-sm-3 col-md-2 col-md-offset-1"><img src="img/hotel-3.jpg" width="135" height="90" alt="hotel-3">
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-6">
+            <h3>villas at poco diablo</h3>
+            <div class="row">
+              <div class="col-xs-5 col-sm-4 col-md-3">
+                <span>апартаменты</span>
+                <a href="#" class="details-btn">подробнее</a>
+              </div>
+              <div class="col-xs-7 col-sm-5 col-md-4">
+                <span>от 4000 р.</span>
+                <a href="#" class="reserv-btn">забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 rate">
+            <div>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <span>рейтинг: 9,2</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer class="row">
+      <div class="col-xs12 col-sm-4 col-md-4"><span>#visitsedona</span>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 social">
+        <a href="#"><i class="fa fa-twitter"></i></a><!--
+        --><a href="#"><i class="fa fa-facebook"></i></a><!--
+        --><a href="#"><i class="fa fa-youtube-play"></i></a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <span>website by</span>
+        <a href="#"></a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/range.js"></script>
+  <script src="js/script-inner.js"></script>
+</body>
+</html>

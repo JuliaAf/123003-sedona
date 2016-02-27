@@ -1,0 +1,69 @@
+.flat-slider.ui-corner-all,
+.flat-slider .ui-corner-all {
+  border-radius: 0;
+}
+
+.flat-slider.ui-slider {
+  border: 0;
+  background: rgba(255,255,255,0.3);
+}
+
+.flat-slider.ui-slider-horizontal {
+  height: 2px;
+}
+
+.flat-slider.ui-slider-vertical {
+  height: 15em;
+  width: 6px;
+}
+
+.flat-slider .ui-slider-handle {
+  /*width: 20px;
+  height: 20px;
+  background: #38b11f;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;*/
+  width:4px;
+  height:4px;
+  background: #ababab;
+  border:8px solid #ffffff;
+  border-radius: 50%;
+  z-index: 20;
+  top:50%;
+  right:0;
+  margin-top:-10px;
+  cursor:pointer;
+  box-sizing: content-box;
+  outline:0;
+}
+.flat-slider .ui-slider-handle:hover {
+  background: #1c4f80;
+}
+
+.flat-slider.ui-slider-horizontal .ui-slider-handle {
+  top: 50%;
+  margin-top: -10px;
+}
+
+.flat-slider.ui-slider-vertical .ui-slider-handle {
+  left: 50%;
+  margin-left: -10px;
+}
+
+
+
+.flat-slider .ui-slider-range {
+  border: 0;
+  background: #ffffff;
+}
+
+.flat-slider.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 2px;
+}
+
+.flat-slider.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 2px;
+}
